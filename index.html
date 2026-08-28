@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title>IA &amp; ML – CROOP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tema preto (você pode trocar por outro tema da pasta reveal/dist/theme) -->
+    <link rel="stylesheet" href="reveal/dist/reveal.css">
+    <link rel="stylesheet" href="reveal/dist/theme/black.css" id="theme">
+    <!-- Opcional: favicon da CROOP -->
+    <link rel="icon" href="assets/favicon.ico">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- O Reveal.js vai ler o Markdown que está em slides.md -->
+        <section data-markdown="slides.md"
+                 data-separator="^\n---\n$"
+                 data-separator-vertical="^\n--\n$"
+                 data-separator-notes="^Note:"></section>
+      </div>
+    </div>
+
+    <!-- Script principal do Reveal.js -->
+    <script src="reveal/dist/reveal.js"></script>
+
+    <!-- Inicialização com transição “fade” (esmaecida) -->
+    <script>
+      Reveal.initialize({
+        transition: 'fade',          // transição entre slides
+        backgroundTransition: 'fade',// transição de fundo
+        controls: true,              // setas de navegação
+        progress: true,              // barra de progresso
+        slideNumber: true,           // número do slide
+        hash: true,                  // permite link direto a um slide
+        // plugins adicionais podem ser incluídos aqui, se precisar
+      });
+    </script>
+  </body>
+</html>
